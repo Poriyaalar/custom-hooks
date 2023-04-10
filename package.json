@@ -1,0 +1,22 @@
+{
+  "name": "@poriyaalar/custom-hooks",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Poriyaalar/custom-hooks.git"
+  },
+  "keywords": [
+    "@poriyaalar"
+  ],
+  "author": "Poriyaalar Private Limited",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Poriyaalar/custom-hooks/issues"
+  },
+  "homepage": "https://github.com/Poriyaalar/custom-hooks#readme"
+}
