@@ -56,7 +56,7 @@ function useSetLocalStorage(key, defaultValue) {
 
       localStorage.setItem(key, JSON.stringify(result));
 
-      return result;
+      return resul;
     });
   };
 
