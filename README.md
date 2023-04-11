@@ -63,9 +63,9 @@ function App() {
 
 **4. useInterval**
 
-This hook repeatedly calls a function with a specified delay.
+This hook repeatedly calls a function with a specified delay.and optional stop function return boolean
 ```
-useInterval(callback,delay)
+useInterval(callback,delay,stop)
 ```
   ***Example:***
   
@@ -74,7 +74,7 @@ import { useInterval } from "@poriyaalar/custom-hooks";
 function App() {
   useInterval(() => {
     console.log("check Interval");
-  }, 3000);
+  }, 3000,() => true);
 ```
 
 **5.useLocalStorage**
