@@ -11,6 +11,7 @@ import {
   useSetLocalStorage,
 } from "./modules/useLocalStorage";
 import useInterval from "./modules/useInterval";
+import useEventListener from "./modules/useEventListener";
 
 export {
   useCurrentPath,
@@ -22,4 +23,5 @@ export {
   useSetGlobalStorage,
   useLocalStorageValue,
   useSetLocalStorage,
+  useEventListener,
 };
