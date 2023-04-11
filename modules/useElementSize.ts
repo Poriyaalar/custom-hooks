@@ -1,8 +1,8 @@
-import { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 import useEventListener from "./useEventListener";
 
-function useElementSize(elementRef) {
+function useElementSize(elementRef: React.RefObject<HTMLInputElement>) {
   const [size, setSize] = useState({
     width: 0,
     height: 0,

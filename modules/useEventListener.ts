@@ -1,7 +1,11 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
-function useEventListener(eventName, handler, element) {
-  const savedHandler = useRef();
+function useEventListener(
+  eventName: string,
+  handler: Function,
+  element?: React.RefObject<HTMLInputElement>
+) {
+  const savedHandler = useRef<any>();
 
   useEffect(() => {
     const targetElement = element?.current || window;
@@ -13,7 +17,7 @@ function useEventListener(eventName, handler, element) {
       savedHandler.current = handler;
     }
 
-    const eventListener = (event) => {
+    const eventListener = (event: any) => {
       if (savedHandler?.current) {
         savedHandler.current(event);
       }
