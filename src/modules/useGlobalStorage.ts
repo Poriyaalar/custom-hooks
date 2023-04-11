@@ -28,7 +28,7 @@ function useGlobalStorageValue(key: string): any {
   return getValue;
 }
 function useSetGlobalStorage(key: string, defaultValue: any) {
-  const [value, setValue] = useState(() => {
+  const [, setValue] = useState(() => {
     return get(window, ["global-storage", key], defaultValue);
   });
   const setValueInGlobalStorage = (newValue: any): any => {

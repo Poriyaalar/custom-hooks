@@ -44,7 +44,7 @@ function useLocalStorageValue(key: string) {
   return getValue;
 }
 function useSetLocalStorage(key: string, defaultValue: any) {
-  const [value, setValue] = useState(() => {
+  const [, setValue] = useState(() => {
     const storedValue = localStorage.getItem(key);
 
     return storedValue === null ? defaultValue : JSON.parse(storedValue);
