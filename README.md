@@ -1,4 +1,3 @@
-Read Me - 
 ***Custom React Hooks***
 
 The following are examples of custom React hooks created by "@poriyaalar/custom-hooks" library. Below is the explanation of each hook with its respective code.
