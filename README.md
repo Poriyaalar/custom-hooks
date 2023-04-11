@@ -1,7 +1,9 @@
 Read Me - **Custom React Hooks**
 The following are examples of custom React hooks created by "@poriyaalar/custom-hooks" library. Below is the explanation of each hook with its respective code.
 **Installation**
-``` npm install @poriyaalar/custom-hooks``` or ```npm i @poriyaalar/custom-hooks  ```
+``` npm install @poriyaalar/custom-hooks``` 
+or 
+```npm i @poriyaalar/custom-hooks  ```
 
 ***1. useEventListener***
 This hook attaches an event listener to a specified element using a ref. When the event occurs on the element, the specified handler function is executed.
