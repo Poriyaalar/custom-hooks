@@ -20,7 +20,7 @@ function useGlobalStorage(key, defaultValue) {
 
   return [value, setValueInLocalStorage];
 }
-function useLocalGlobalStorage(key) {
+function useGlobalStorageValue(key) {
   const value = () => {
     return get(window, ["global-storage", key]);
   };
@@ -44,4 +44,4 @@ function useSetGlobalStorage(key, defaultValue) {
 
   return [setValueInGlobalStorage];
 }
-export { useGlobalStorage, useLocalGlobalStorage, useSetGlobalStorage };
+export { useGlobalStorage, useGlobalStorageValue, useSetGlobalStorage };

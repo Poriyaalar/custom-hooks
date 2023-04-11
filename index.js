@@ -5,7 +5,7 @@ import {
 } from "./modules/useLocalStorage";
 import {
   useGlobalStorage,
-  useLocalGlobalStorage,
+  useGlobalStorageValue,
   useSetGlobalStorage,
 } from "./modules/useGlobalStorage";
 import useCurrentPath from "./modules/useCurrentPath";
@@ -17,7 +17,7 @@ export {
   useLocalStorageValue,
   useSetLocalStorage,
   useSetGlobalStorage,
-  useLocalGlobalStorage,
+  useGlobalStorageValue,
   useGlobalStorage,
   useCurrentPath,
   useEventListener,
