@@ -62,6 +62,7 @@ function App() {
 ```
 
 **4. useInterval**
+
 This hook repeatedly calls a function with a specified delay.
 ```
 useInterval(callback,delay)
@@ -77,6 +78,7 @@ function App() {
 ```
 
 **5.useLocalStorage**
+
 This hook provides a way to store data  and get the data in the browser's local storage. It returns an array with two values: the current value stored in local storage and a function to set a new value.
  ```
 useLocalStorage(key,defaultValue)
@@ -94,6 +96,7 @@ function App() {
 }
  ```
 **6.useLocalStorageValue**
+
 This hook provides a way to  get the data in the browser's local storage. It returns  stored values.
  ```
 useLocalStorageValue(key)
@@ -108,6 +111,7 @@ function App() {
  ```
 
 **7.useSetLocalStorage**
+
 This hook provides a way to store data   in the browser's local storage. Its not returns any array  values: the current value stored in window storage and a function to set a new value.
  ```
 useSetLocalStorage(key,defaultValue)
@@ -126,6 +130,7 @@ function App() {
  ```
 
 **8.useGlobalStorage**
+
 This hook provides a way to store data and get the data in the browser's window storage. It returns an array with two values: the current value stored in window storage and a function to set a new value.
  ```
 useLocalStorage(key,defaultValue)
@@ -143,6 +148,7 @@ function App() {
   }
    ```
 **9.useGlobalStorageValue**
+
 This hook provides a way to  get the data in the browser's window storage. It returns  stored values.
  ```
 useGlobalStorageValue(key)
@@ -156,6 +162,7 @@ function App() {
 }
  ```
 **10.useSetGlobalStorage**
+
 This hook provides a way to store data   in the browser's window storage. Its not returns any array  values: the current value stored in window storage and a function to set a new value.
  ```
 useSetGlobalStorage(key,defaultValue)
