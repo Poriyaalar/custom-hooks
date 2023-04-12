@@ -1,5 +1,11 @@
 import { useEffect, useRef } from "react";
-
+/**
+ *
+ *
+ * @example
+ * useInterval(()=>{console.log('checkInterval')},1000,()=>true)
+ *
+ */
 const useInterval = (
   callback: Function,
   delay: number,

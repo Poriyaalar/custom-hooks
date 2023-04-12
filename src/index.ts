@@ -12,6 +12,8 @@ import {
 } from "./modules/useLocalStorage";
 import useInterval from "./modules/useInterval";
 import useEventListener from "./modules/useEventListener";
+import useMediaQuery from "./modules/useMediaQuery";
+import useResponsive from "./modules/useResponsive";
 
 export {
   useCurrentPath,
@@ -24,4 +26,6 @@ export {
   useLocalStorageValue,
   useSetLocalStorage,
   useEventListener,
+  useMediaQuery,
+  useResponsive,
 };

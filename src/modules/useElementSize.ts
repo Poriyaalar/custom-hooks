@@ -1,8 +1,18 @@
 import React, { useCallback, useEffect, useState } from "react";
 
 import useEventListener from "./useEventListener";
-
-function useElementSize(elementRef: React.RefObject<HTMLInputElement>) {
+type Result = {
+  width: number;
+  height: number;
+};
+/**
+ *
+ *
+ * @example
+ * const {width,height} = useElementSize(ref);
+ * @returns {Result} Is the media query active
+ */
+function useElementSize(elementRef: React.RefObject<HTMLInputElement>): Result {
   const [size, setSize] = useState({
     width: 0,
     height: 0,
