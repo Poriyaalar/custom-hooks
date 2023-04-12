@@ -10,7 +10,7 @@ function useLocalStorage(key: string, defaultValue: any): any[] {
   });
 
   useEffect(() => {
-    const listener = (e: any): any => {
+    const listener = (e: any): void => {
       if (e.storageArea === localStorage && e.key === key) {
         setValue(JSON.parse(e.newValue));
       }
