@@ -206,7 +206,7 @@ console.log(value)
 }
 ```
 
-### **10.useSetGlobalStorage(key,defaultValue)**
+### **10. useSetGlobalStorage(key,defaultValue)**
 
 |  Parameter   | Mandatory |  Type  |                                                    Description                                                     |
 | :----------: | :-------: | :----: | :----------------------------------------------------------------------------------------------------------------: |
@@ -255,6 +255,7 @@ function App() {
 This hook which listens for a media query and updates the state when the query is true/false
 
 returns the object contains the device type with the value of boolean.
+
 **_Example:_**
 
 ```
