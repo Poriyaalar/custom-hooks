@@ -16,7 +16,7 @@
     "url": "git+https://github.com/Poriyaalar/custom-hooks.git"
   },
   "keywords": [
-    "@poriyaalar"
+    "react", "custom-hooks", "react-hooks"
   ],
   "author": "Poriyaalar Private Limited",
   "license": "ISC",
