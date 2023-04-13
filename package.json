@@ -16,7 +16,9 @@
     "url": "git+https://github.com/Poriyaalar/custom-hooks.git"
   },
   "keywords": [
-    "react", "custom-hooks", "react-hooks"
+    "react",
+    "custom-hooks",
+    "react-hooks"
   ],
   "author": "Poriyaalar Private Limited",
   "license": "ISC",
@@ -32,5 +34,54 @@
     "@types/lodash": "^4.14.192",
     "@types/react": "^18.0.34",
     "typescript": "^5.0.4"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest-setup.ts"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/public/"
+    ],
+    "modulePathIgnorePatterns": [
+      "dist/"
+    ],
+    "moduleNameMapper": {
+      "@/(.*)": "<rootDir>/src/$1"
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "<rootDir>/src/components/**",
+      "<rootDir>/src/containers/**/sections/**",
+      "<rootDir>/src/helper/**",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "lines": 10,
+        "branches": 10,
+        "functions": 10,
+        "statements": 10
+      }
+    },
+    "coverageReporters": [
+      "text-summary",
+      "lcov"
+    ],
+    "coverageDirectory": ".",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      ".(js|jsx)": "babel-jest",
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testMatch": [
+      "**/__tests__/*.(ts|tsx|js)"
+    ]
   }
 }
