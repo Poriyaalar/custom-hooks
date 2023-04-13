@@ -5,6 +5,13 @@ function useEventListener(
   handler: Function,
   element?: React.RefObject<HTMLInputElement>
 ) {
+  /**
+   *
+   *
+   * @example
+   * useEventListener("click",(e)=>console.log(e),ref);
+   *
+   */
   const savedHandler = useRef<any>();
 
   useEffect(() => {
