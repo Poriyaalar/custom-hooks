@@ -225,7 +225,7 @@ function App() {
 const [setValue] = useSetGlobalStorage("data", { name: "Test" });
 
 const setToGlobalStorage = () => {
- setValue({ name: "Poriyaalar" });
+  setValue({ name: "Poriyaalar" });
 };
 setToGlobalStorage();
 }
@@ -246,7 +246,7 @@ returns the boolean value **true** or **false**.
 ```
 import { useMediaQuery } from "@poriyaalar/custom-hooks";
 function App() {
- const isMobileMin = useMediaQuery("(min-width:320px)");
+  const isMobileMin = useMediaQuery("(min-width:320px)");
 }
 ```
 
@@ -261,6 +261,6 @@ returns the object contains the device type with the value of boolean.
 ```
 import { useResponsive } from "@poriyaalar/custom-hooks";
 function App() {
- const deviceType = useResponsive();
+  const deviceType = useResponsive();
 }
 ```
